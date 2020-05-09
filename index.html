@@ -1081,12 +1081,21 @@
 								
 								<div class="block-form">
 									
-									<form class="contact-form clearfix" method="post" action="send.php">
+									<!--<form class="contact-form clearfix" method="post" action="send.php">
 										<input type="text" placeholder="Name *" value="" id="name" name="name">
 										<input type="text" placeholder="Email *" value="" id="email" name="email">
 										<input type="text" placeholder="Subject" value="" id="subject" name="subject">
 									<textarea name="message" placeholder="Message *" id="message" cols="45" rows="10"></textarea>
 									<input type="submit" value="Send Message" class="but opc white submit">
+									</form>-->
+									<form action="https://formspree.io/xjvavnvw" method="POST" class="contact-form clearfix">
+									   <input type="text" name="name" placeholder="Name *" >
+ 									   <input type="text" name="_replyto" placeholder="Email *">
+ 									   <textarea name="message" placeholder="Message *"></textarea>
+ 									 <!-- your other form fields go here -->
+									   
+									
+ 									 <button type="submit" class="but opc white submit">Send</button>
 									</form>
 
 									<!--Contact form message-->
@@ -1097,6 +1106,8 @@
 								</div>
 							
 						</div>
+							
+						
 
 						</div>
 						<!--End block contact-->
